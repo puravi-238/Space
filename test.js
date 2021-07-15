@@ -1,6 +1,27 @@
 (
   function()
   {
+	  
+	  const StartMin = 5;
+	  let time = StartMin*60;
+	  
+	  const countdown = document.getElementById("count");
+	  
+	  setInterval(updateCount,1000);
+	  function updateCount()
+	  {
+		  const minutes =Math.floor(time/60);
+		  let second = time % 60;
+		  
+		  second = second<10 ? '0'+second : second;
+		  if(time<60)
+		   {
+			    countdown.style.color = 'red';
+		   }
+		  countdown.innerHTML = `${minutes} : ${second}`
+		   time--;
+		   
+	  }
     var questions = [{
       question: "Which of the following phenomenon cannot be observed on the surface of the moon",
       choices: ["Rising and setting of the sun","Solar eclipse","Motion of comets","Twinking of Star"],

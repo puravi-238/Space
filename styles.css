@@ -71,6 +71,27 @@ ul
     width: 90px;
 }
 
+#count
+{
+	font-family:'Roboto',sans-serif;
+	margin:0;
+}
+
+span{
+	 display:inline-block;
+	 width: 150px;
+	 height: 70px;
+	 font-size:50px;
+	 padding:2px;
+	 vertical-align:middle;
+	 justify-content: center;
+     align-items: center;
+	 position : absolute;
+	 top : 0px;
+	 
+	 		 
+}
+
 footer
 {
     text-align: center;
